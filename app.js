@@ -12,13 +12,16 @@
 
 Ext.application({
     name: 'MB_Sencha',
-
+    autoCreateViewport:true,
     requires: [
         'Ext.MessageBox'
     ],
 
+    controllers:['LoginController'],
+
     views: [
-        'Main'
+        'MainContainer',
+        'Login'
     ],
 
     icon: {
@@ -44,7 +47,9 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('MB_Sencha.view.Main'));
+        Ext.Viewport.add(Ext.create('MB_Sencha.view.Login'));
+        Ext.Viewport.add(Ext.create('MB_Sencha.view.MainContainer'));
+        
     },
 
     onUpdated: function() {
