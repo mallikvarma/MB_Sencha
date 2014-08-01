@@ -1,18 +1,21 @@
 Ext.define('MB_Sencha.view.OverView', {
-    extend: 'Ext.panel.Panel',
+    extend: 'Ext.Panel',
     xtype: 'overview',
     requires: [
         'Ext.TitleBar',        
     ],
-    config: {      
+    config: {   
+
         items:[
                {
                  docked: 'top',
-                 xtype: 'titlebar',
-                 title: 'Vehicle Overview'
+                 xtype: 'titlebar', 
+                 cls:'custom-title-bar',                
+                 title: 'Home'
                 },
                 {
-                   html: "Vehicle Report Goes Here"
+                    centered:true,
+                   html: "<img src='resources/images/keyfob_120_english_010713.png'></img>"
                 },
              ]
         }

@@ -1,28 +1,54 @@
 Ext.define('MB_Sencha.view.MainContainer', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.TabPanel',
     xtype: 'maincontainer',
     requires: [
         'Ext.TitleBar',       
     ],
+
     config: {
-        tabBarPosition: 'bottom',
+        
+        fullscreen:true,
+
+        tabBar: {
+            dock:'bottom',
+            cls:'custom-title-bar',
+            scrollable: {
+                direction: 'horizontal',
+                indicators: false
+              }          
+        }, 
+
 
         items: [
             {
-                title: 'Over View',
-                html:'<b>View - 1</b>',
+                title: 'Home',
+                xtype:'overview',
                 label:'Overview',
-                icon:'home'
+                iconCls:'home',                
             },
             {
-                title: 'GPS',
-                html:'<b>View - 2</b>',
-                label:'gps'
+                title: 'Send2Benz',
+                xtype:'send2benz',
+                label:'Send2Benz',
+                iconCls:'action'
             },
             {
-                title: 'Details',
+                title: 'Concierge',
                 html:'<b>View - 3</b>',
-                label:'details'
+                label:'Concierge',
+                iconCls:'organize'
+            },
+            {
+                title: 'Dealer',
+                html:'<b>View - 3</b>',
+                label:'Dealer',
+                iconCls:'user'
+            },
+            {
+                title: 'More',
+                html:'<b>View - 3</b>',
+                label:'details',
+                iconCls:'more'
             }
         ]
     }

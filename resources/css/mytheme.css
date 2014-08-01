@@ -1,0 +1,41 @@
+.mb-title-bar{
+	background-color:#000;
+	background-image:url(../images/masterTitle_240dpi.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.custom-title-bar {
+	background-color:#000;
+	background-image:none;
+	background-repeat: no-repeat;	
+	min-height: 2.0em;
+}
+
+.custom-title-bar .x-title {
+	line-height:2.0em;
+	font-size:0.9em;
+}
+
+.mb-login-view {
+	background-color: #000;
+}
+.x-layout-card-item{
+	background-image:url(../images/3grey_bg_640x1096.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.mb-over-view {
+
+}
+.login-form{
+	margin-bottom:2px;
+}
+.remember-me{
+	color:white;
+	font-size: 0.8em;
+}
+.login-info {
+	color:white;
+	font-size: 0.7em;
+	margin:10px;
+}

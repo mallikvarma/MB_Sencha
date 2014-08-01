@@ -45,7 +45,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "MB_Sencha": "app"
+  "MB_Sencha": "app",
+  "MB_Sencha.view.OverView": "app/view/Overview.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -667,7 +668,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "MB_Sencha.view.Main": []
+  "MB_Sencha.controller.LoginController": [],
+  "MB_Sencha.view.Login": [],
+  "MB_Sencha.view.MainContainer": [],
+  "MB_Sencha.view.OverView": [],
+  "MB_Sencha.view.Send2Benz": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1386,8 +1391,18 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
-  "MB_Sencha.view.Main": [
-    "widget.main"
+  "MB_Sencha.controller.LoginController": [],
+  "MB_Sencha.view.Login": [
+    "widget.loginview"
+  ],
+  "MB_Sencha.view.MainContainer": [
+    "widget.maincontainer"
+  ],
+  "MB_Sencha.view.OverView": [
+    "widget.overview"
+  ],
+  "MB_Sencha.view.Send2Benz": [
+    "widget.send2benz"
   ]
 });
 

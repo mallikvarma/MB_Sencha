@@ -12,7 +12,7 @@
 
 Ext.application({
     name: 'MB_Sencha',
-    autoCreateViewport:true,
+    
     requires: [
         'Ext.MessageBox'
     ],

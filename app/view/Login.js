@@ -4,6 +4,7 @@ Ext.define('MB_Sencha.view.Login', {
     requires: [
         'Ext.TitleBar',        
     ],
+
     listeners:[
         {
             element: 'element',
@@ -15,40 +16,50 @@ Ext.define('MB_Sencha.view.Login', {
             }
         }
     ],
-    config: {       
+    config: {   
+        layout:'vbox',
+        cls:'mb-login-view',    
         items: [{
-                title: 'Mercedez Benz',
-                iconCls: 'action',
+                title: '',
                 xtype:'titlebar',
+                cls:'mb-title-bar',
                 docked:'top'
             },
             {
                 xtype: 'fieldset',
-                title: 'Login',
+                title: '',
+                cls:'login-form',
                 items: [
                         {
                             xtype: 'textfield',
-                            name : 'username',
-                            label: 'User Name'
+                            name : 'Account',
+                            label: 'Account'
                         },
                         {
                             xtype: 'passwordfield',
-                            name : 'password',
-                            label: 'Password'
+                            name : 'PIN',
+                            label: 'PIN'
                         },
-                        {
-                            xtype: 'textfield',
-                            name : 'account',
-                            label: 'Account Num'
-                        },
-                        {
-                            xtype: 'button',
-                            text : 'Submit',
-                            id:'submitBtn'                            
-                        }
+
                     ]
             },
+            {
+                html:"<input type='checkbox'> Rememeber me",
+                cls:'remember-me',
+                margin:10,
+            },
+            {
+                html:"(Forgot your mbrace account number or PIN?<br>Call the Mercedes-Benz mbrace Response Center at 1(866)990 9007 or press the i-Button in your vehicle.)",
+                cls:'login-info',
+                
+            },
+            {
+                xtype: 'button',
+                text : 'Login',
+                id:'submitBtn',
+                width:'50%',
 
+            }
         ]
     },
 
