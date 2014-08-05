@@ -15,7 +15,7 @@ Ext.define('MB_Sencha.view.OverView', {
                 },
                 {
                     centered:true,
-                   html: "<img src='resources/images/keyfob_120_english_010713.png'></img>"
+                    html: "<img src='resources/images/keyfob_120_english_010713.png'></img>"
                 },
              ]
         }

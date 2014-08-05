@@ -672,7 +672,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "MB_Sencha.view.Login": [],
   "MB_Sencha.view.MainContainer": [],
   "MB_Sencha.view.OverView": [],
-  "MB_Sencha.view.Send2Benz": []
+  "MB_Sencha.view.Send2Benz": [],
+  "MB_Sencha.view.components.SBTileView": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1403,6 +1404,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "MB_Sencha.view.Send2Benz": [
     "widget.send2benz"
+  ],
+  "MB_Sencha.view.components.SBTileView": [
+    "widget.sbtileview"
   ]
 });
 

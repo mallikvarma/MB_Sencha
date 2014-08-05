@@ -14,7 +14,8 @@ Ext.application({
     name: 'MB_Sencha',
     
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'Ext.DataView'
     ],
 
     controllers:['LoginController'],
@@ -45,7 +46,6 @@ Ext.application({
     launch: function() {
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
-
         // Initialize the main view
         Ext.Viewport.add(Ext.create('MB_Sencha.view.Login'));
         Ext.Viewport.add(Ext.create('MB_Sencha.view.MainContainer'));
